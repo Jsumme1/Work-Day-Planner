@@ -19,29 +19,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js"/>
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <!-- Header -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container border">
-        <div class="row">
-      <div class="col-2 border-right text-end">
-      8:00 AM
+
+    <!-- Time Slots begin here -->
+    <div class="container">
+        
+      <div class="row time-slot">
+        <div id="hourOne" class="col-2 border text-end hour">
+        8:00 AM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
       </div>
-      <div class="col-8 border-right">
-      Task
-     </div>
-       <div class="col-2 text-end">
-      save
+      
+      <div class="row time-slot">
+        <div id="hourTwo" class="col-2 border text-end hour">
+        9:00 AM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
       </div>
-    </div>
-</div>
+      
+   <div class="row time-slot">
+        <div id="hourThree" class="col-2 border text-end hour">
+        10:00 AM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>  
+   
+    <div class="row time-slot">
+        <div id="hourFour" class="col-2 border text-end hour">
+        11:00 AM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+      
+    <div class="row time-slot">
+        <div id="hourFive" class="col-2 border text-end hour">
+        12:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+
+      <div class="row time-slot">
+        <div id="hourSix" class="col-2 border text-end hour">
+        1:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+   
+      <div class="row time-slot">
+        <div id="hourSeven" class="col-2 border text-end hour">
+        2:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+   
+      <div class="row time-slot">
+        <div id="hourEight" class="col-2 border text-end hour">
+        3:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+   
+      <div class="row time-slot">
+        <div id="hourNine" class="col-2 border text-end hour">
+        4:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+
+      <div class="row time-slot">
+        <div id="hourTen" class="col-2 border text-end hour">
+        5:00 PM
+        </div>
+        <textarea class="col-8 border" id="task"></textarea>
+        <button class="btn saveBtn col-md-2"><i class="fas fa-save"></i></button>
+      </div>   
+  </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      
   </body>
 </html>
