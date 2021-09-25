@@ -11,7 +11,7 @@ $(document).ready(function () {
     var time = $(this).parent().attr("id");
 
     // Save text in local storage
-    localStorage.setItem(time, text);
+    localStorage.setItem(time,text);
   })
 
   function timeTracker() {
@@ -40,16 +40,16 @@ $(document).ready(function () {
   }
 
   // Get item from local storage if any
-  $("#hourOne.task").val(localStorage.getItem("hourOne"));
-  $("#hourTwo.task").val(localStorage.getItem("hourTwo"));
-  $("#hourThree.task").val(localStorage.getItem("hourThree"));
-  $("#hourFour.task").val(localStorage.getItem("hourFour"));
-  $("#hourFive.task").val(localStorage.getItem("hourFive"));
-  $("#hourSix.task").val(localStorage.getItem("hourSix"));
-  $("#hourSeven.task").val(localStorage.getItem("hourSeven"));
-  $("#hourEight.task").val(localStorage.getItem("hourEight"));
-  $("#hourNine.task").val(localStorage.getItem("hourNine"));
-  $("#hourTen.task").val(localStorage.getItem("hourTen"));
+  $("#hourOne .task").val(localStorage.getItem("hourOne"));
+  $("#hourTwo .task").val(localStorage.getItem("hourTwo"));
+  $("#hourThree .task").val(localStorage.getItem("hourThree"));
+  $("#hourFour .task").val(localStorage.getItem("hourFour"));
+  $("#hourFive .task").val(localStorage.getItem("hourFive"));
+  $("#hourSix .task").val(localStorage.getItem("hourSix"));
+  $("#hourSeven .task").val(localStorage.getItem("hourSeven"));
+  $("#hourEight .task").val(localStorage.getItem("hourEight"));
+  $("#hourNine .task").val(localStorage.getItem("hourNine"));
+  $("#hourTen .task").val(localStorage.getItem("hourTen"));
 
   timeTracker();
 });
