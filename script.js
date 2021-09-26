@@ -2,7 +2,7 @@
 var todayDate = moment().format("MMMM Do YYYY, h:mm:ss a");
 $("#currentDay").html(todayDate);
 
-
+// hold functions until page DOM is ready to execute
 $(document).ready(function () {
   // saveBtn click listener
   $(".saveBtn").on("click", function () {
